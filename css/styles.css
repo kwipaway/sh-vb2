@@ -53,10 +53,12 @@ h1, h2 {
 }
 
 footer {
-    background-color: #0033A0;
+    background: url('../images/shsu.png');
+    background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
     margin-top: 2rem;
 }
 
