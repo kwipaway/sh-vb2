@@ -97,12 +97,12 @@ footer {
     height: calc(100% - 52px);
     border: none;
 }
-/* Collapsible Floating AI Chatbot */
+/* Floating Collapsible AI Chatbot - Always Outside Content */
 .chatbot-widget {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 1000;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
     font-family: Arial, sans-serif;
 }
 
@@ -113,49 +113,50 @@ footer {
 }
 
 .chatbot-button {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     background: #0033A0;
     color: white;
     border: none;
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 32px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .chatbot-button:hover {
     background: #FE5100;
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .chatbot-label {
-    background: rgba(0, 51, 160, 0.9);
+    background: #0033A0;
     color: white;
-    padding: 10px 16px;
-    border-radius: 25px;
+    padding: 12px 18px;
+    border-radius: 30px;
     font-weight: bold;
     white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
 }
 
 .chatbot-window {
     display: none;
     position: fixed;
-    right: 20px;
-    bottom: 90px;
+    right: 25px;
+    bottom: 110px;
     width: 380px;
     height: 620px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     border: 3px solid #0033A0;
     overflow: hidden;
-    z-index: 1001;
+    z-index: 10000;
 }
 
 .chatbot-header {
@@ -169,15 +170,16 @@ footer {
 
 .chatbot-header h3 {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
 
 .close-btn {
     background: none;
     border: none;
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
+    line-height: 1;
 }
 
 .chatbot-window iframe {
