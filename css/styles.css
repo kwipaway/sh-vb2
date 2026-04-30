@@ -65,7 +65,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -74,7 +74,7 @@ footer {
 }
 
 /* ====================== */
-/* Collapsible Floating AI Chatbot */
+/* Floating Collapsible AI Chatbot */
 /* ====================== */
 .chatbot-widget {
     position: fixed;
