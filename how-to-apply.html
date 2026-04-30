@@ -47,13 +47,28 @@
             </ul>
         </div>
 
-        <div class="chatbot-container">
-            <h3>Ask Our AI Assistant</h3>
+            <!-- Collapsible Floating AI Chatbot -->
+    <div class="chatbot-widget">
+        <button class="chatbot-button" onclick="toggleChat()">💬</button>
+        
+        <div class="chatbot-window" id="chatWindow">
+            <div class="chatbot-header">
+                <h3>Ask Our AI Assistant</h3>
+                <button class="close-btn" onclick="toggleChat()">×</button>
+            </div>
             <iframe 
-              src="https://udify.app/chatbot/L1NCVn7dxlqOYDa3"
-              allow="microphone">
-             </iframe>
+                src="https://udify.app/chatbot/L1NCVn7dxlqOYDa3"
+                allow="microphone">
+            </iframe>
         </div>
+    </div>
+
+    <script>
+        function toggleChat() {
+            const chatWindow = document.getElementById('chatWindow');
+            chatWindow.style.display = (chatWindow.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
     </main>
 
     <footer>
