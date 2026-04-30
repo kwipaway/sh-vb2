@@ -68,3 +68,32 @@ footer {
         gap: 1rem;
     }
 }
+/* Floating AI Chatbot - Right Side */
+.chatbot-container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 380px;
+    height: 620px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    border: 3px solid #0033A0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.chatbot-container h3 {
+    background: #0033A0;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.chatbot-container iframe {
+    width: 100%;
+    height: calc(100% - 52px);
+    border: none;
+}
