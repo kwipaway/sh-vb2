@@ -97,13 +97,19 @@ footer {
     height: calc(100% - 52px);
     border: none;
 }
-/* Collapsible Floating Chatbot */
+/* Collapsible Floating AI Chatbot */
 .chatbot-widget {
     position: fixed;
     right: 20px;
     bottom: 20px;
     z-index: 1000;
     font-family: Arial, sans-serif;
+}
+
+.chatbot-button-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .chatbot-button {
@@ -125,6 +131,16 @@ footer {
 .chatbot-button:hover {
     background: #FE5100;
     transform: scale(1.1);
+}
+
+.chatbot-label {
+    background: rgba(0, 51, 160, 0.9);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .chatbot-window {

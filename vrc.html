@@ -38,9 +38,12 @@
                <strong>Email:</strong> veterans@shsu.edu</p>
         </div>
 
-           <!-- Collapsible Floating AI Chatbot -->
+    <!-- Collapsible Floating AI Chatbot -->
     <div class="chatbot-widget">
-        <button class="chatbot-button" onclick="toggleChat()">💬</button>
+        <div class="chatbot-button-container">
+            <button class="chatbot-button" onclick="toggleChat()">💬</button>
+            <div class="chatbot-label">Ask AI Chatbot</div>
+        </div>
         
         <div class="chatbot-window" id="chatWindow">
             <div class="chatbot-header">
@@ -60,6 +63,7 @@
             chatWindow.style.display = (chatWindow.style.display === 'block') ? 'none' : 'block';
         }
     </script>
+
     </main>
 
     <footer>
