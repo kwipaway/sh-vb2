@@ -53,12 +53,11 @@
         <p>&copy; 2026 SHSU Veterans Benefits Processing • Estill Building, Suite 228 • 936-294-1440 • vetbenefits@shsu.edu</p>
     </footer>
 
-       <!-- Floating Collapsible AI Chatbot -->
+       <!-- Compact Floating AI Chatbot -->
     <div class="chatbot-widget">
-        <div class="chatbot-button-container">
-            <button class="chatbot-button" onclick="toggleChat()">💬</button>
-            <div class="chatbot-label">Ask AI Chatbot</div>
-        </div>
+        <button class="chatbot-button" onclick="toggleChat()">
+            <span>💬</span> Ask AI Chatbot
+        </button>
         
         <div class="chatbot-window" id="chatWindow">
             <div class="chatbot-header">
@@ -75,11 +74,7 @@
     <script>
         function toggleChat() {
             const chatWindow = document.getElementById('chatWindow');
-            if (chatWindow.style.display === 'block') {
-                chatWindow.style.display = 'none';
-            } else {
-                chatWindow.style.display = 'block';
-            }
+            chatWindow.style.display = (chatWindow.style.display === 'block') ? 'none' : 'block';
         }
     </script>
 </body>
