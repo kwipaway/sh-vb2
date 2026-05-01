@@ -68,11 +68,11 @@ footer {
     margin-top: 3rem;
 }
 
-/* ==================== COMPACT CHATBOT - BETTER RESPONSIVE ==================== */
+/* ==================== RESPONSIVE CHATBOT BUTTON ==================== */
 .chatbot-widget {
     position: fixed;
     bottom: 25px;
-    right: 30px;
+    right: 25px;
     z-index: 99999;
 }
 
@@ -81,7 +81,7 @@ footer {
     color: white;
     border: none;
     border-radius: 30px;
-    padding: 10px 17px;
+    padding: 10px 18px;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
@@ -106,7 +106,7 @@ footer {
     display: none;
     position: fixed;
     bottom: 85px;
-    right: 30px;
+    right: 25px;
     width: 370px;
     height: 600px;
     background: white;
@@ -140,13 +140,10 @@ footer {
     border: none;
 }
 
-/* ==================== RESPONSIVE - FIX OVERLAP ON SMALLER SCREENS ==================== */
+/* ==================== RESPONSIVE BEHAVIOR ==================== */
 @media (max-width: 1024px) {
     .chatbot-widget {
-        right: 25px;
-    }
-    .chatbot-window {
-        right: 25px;
+        right: 20px;
     }
 }
 
@@ -162,10 +159,14 @@ footer {
         padding: 1.2rem 1rem;
     }
     
-    /* Push chatbot further right and up on smaller screens */
     .chatbot-widget {
         right: 15px;
         bottom: 20px;
+    }
+    
+    .chatbot-button {
+        padding: 9px 15px;
+        font-size: 13px;
     }
     
     .chatbot-window {
@@ -174,16 +175,16 @@ footer {
         right: 4vw;
         bottom: 85px;
     }
-    
-    .chatbot-button {
-        padding: 9px 15px;
-        font-size: 13.5px;
-    }
 }
 
 @media (max-width: 480px) {
     .chatbot-widget {
         right: 12px;
-        bottom: 15px;
+        bottom: 18px;
+    }
+    
+    .chatbot-button {
+        padding: 8px 13px;
+        font-size: 12.5px;
     }
 }
